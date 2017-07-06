@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas{
+            border: 1px solid #000;
+            margin-left: calc(50% - 400px);
+            background: skyblue;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="800" height="600"></canvas>
+<script src="js/simple%20inheritence.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/FrameNumber.js"></script>
+<script src="js/LoadSource.js"></script>
+<script src="js/Background.js"></script>
+<script src="js/Pipe.js"></script>
+<script src="js/Bird.js"></script>
+
+<script>
+    var game = new Game({
+        canvasId:'canvas',
+        fps:30
+    });
+
+
+</script>
+</body>
+</html>
